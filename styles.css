@@ -1,0 +1,64 @@
+/*html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+}*/
+body {
+    text-align: center;
+    background: url("silentguru.jpg") fixed;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+h1 {
+    font-family: times, sans-serif;
+    font-size: 50px;
+    margin: 0.2em;
+}
+#color1{
+    color: rgb(240,196,50);
+    font-family: Broadway, times, sans-serif;
+}
+#intro{
+    font-style: italic;
+    font-family: CASTELLAR, times ,sans-serif;
+    text-align: center;
+    text-shadow: grey;
+    margin: 0.2em;
+    font-size:3em;
+    letter-spacing: -3px;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
