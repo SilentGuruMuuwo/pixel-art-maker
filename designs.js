@@ -3,7 +3,7 @@
 
 // When size is submitted by the user, call makeGrid()
 var height, width, color;
-$('#sizePicker').submit(function(event){
+$('#sizePicker').on('submit', function(event){
 	event.preventDefault();
 	height = $('#inputHeight').val();
 	width = $('#inputWidth').val();
@@ -16,11 +16,11 @@ function makeGrid(h,w) {
 	for(var i = 1; i<=h; i++){
 		$('#pixelCanvas').append('<tr id=table' + i + '></tr>');
 		for(var j = 1; j<=w; j++){
-			$('table' + i).append('<td></td>');
+			$('tr').filter(':last').append('<td></td>')
 		}
 	};
-	$('td').click(function addColor(){
-		color = $('#colorPicker').value();
+	$('td').on('click', function addColor(){
+		color = $('#colorPicker').val();
 
 		if($(this).attr('style')){
 			$(this).removeAttr('style');
